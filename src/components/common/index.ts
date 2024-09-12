@@ -1,3 +1,4 @@
+export * from "./About";
 export * from "./Badge";
 export * from "./DevImg";
 export * from "./Footer";
