@@ -11,6 +11,7 @@ import {
 import { Button } from "../ui";
 import { Social } from "./Social";
 import { DevImg } from "./DevImg";
+import { BadgeCustom } from "./Badge";
 
 export const Hero = () => {
   return (
@@ -47,8 +48,35 @@ export const Hero = () => {
 
           {/* Image */}
           <div className="hidden xl:flex relative">
+            {/* Badge 1 */}
+            <BadgeCustom
+              containerStyles="absolute top-[24%] -left-[5rem]"
+              icon={<RiBriefcase4Fill />}
+              endCountNum={4}
+              badgeText="Años de experiencia"
+            />
+
+            {/* Badge 2 */}
+            <BadgeCustom
+              containerStyles="absolute top-[80%] -left-[1rem]"
+              icon={<RiTodoFill />}
+              endCountNum={12}
+              badgeText="Proyeto finalizado"
+            />
+
+            {/* Badge 3 */}
+            <BadgeCustom
+              containerStyles="absolute top-[55%] -right-8"
+              icon={<RiTeamFill />}
+              endCountNum={2}
+              endCountText="K"
+              badgeText="App descargada"
+            />
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
-            <DevImg containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom" imgSrc="/hero/developer.png"/>
+            <DevImg
+              containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
+              imgSrc="/hero/developer.png"
+            />
           </div>
 
           {/* Icon */}
