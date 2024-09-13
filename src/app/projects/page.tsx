@@ -1,7 +1,13 @@
+"use client";
+
+import { projectData } from "@/components";
+
 export default function ProjectPage() {
+  console.log(projectData);
+
   return (
-    <div>
+    <section className="min-h-screen pt-12">
       <h1>ProjectPage</h1>
-    </div>
+    </section>
   );
 }

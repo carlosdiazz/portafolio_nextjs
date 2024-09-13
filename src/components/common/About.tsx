@@ -6,7 +6,7 @@ import {
   HomeIcon,
   PhoneCall,
   GraduationCap,
-  Calendar,
+  //Calendar,
   Briefcase,
 } from "lucide-react";
 import Image from "next/image";
@@ -22,10 +22,10 @@ const infoData: InfoDataInterface[] = [
   { icon: <User2 size={28} />, text: "Carlos Diaz" },
   { icon: <PhoneCall size={28} />, text: "+1 829 802 5258" },
   { icon: <MailIcon size={28} />, text: "c.diazadriann@gmail.com" },
-  {
-    icon: <GraduationCap size={28} />,
-    text: "Ingenerio de Ciencias de la Computacion",
-  },
+  //{
+  //  icon: <GraduationCap size={28} />,
+  //  text: "Ingenerio de Ciencias de la Computacion",
+  //},
   { icon: <HomeIcon size={28} />, text: "La Vega, Rep. Dom." },
 ];
 
@@ -112,6 +112,7 @@ const skillData: SkillData[] = [
 ];
 
 export const About = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const getData = (arr: any[], title: string) => {
     return arr.find((item) => item.title === title);
   };
