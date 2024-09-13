@@ -78,7 +78,16 @@ const qualificationData = [
   },
 ];
 
-const skillData = [
+interface SkillDataItem {
+  name: string;
+}
+
+interface SkillData {
+  title: string;
+  data: SkillDataItem[];
+}
+
+const skillData: SkillData[] = [
   {
     title: "Skills",
     data: [
@@ -94,10 +103,10 @@ const skillData = [
   {
     title: "Tools",
     data: [
-      { imgPath: "/about/vscode.svg" },
-      { imgPath: "/about/figma.svg" },
-      { imgPath: "/about/notion.svg" },
-      { imgPath: "/about/wordpress.svg" },
+      { name: "/about/vscode.svg" },
+      { name: "/about/figma.svg" },
+      { name: "/about/notion.svg" },
+      { name: "/about/wordpress.svg" },
     ],
   },
 ];
@@ -217,7 +226,7 @@ export const About = () => {
                       </div>
 
                       {/* Education */}
-                      <div className="flex flex-col gap-y-6" >
+                      <div className="flex flex-col gap-y-6">
                         <div className="flex gap-x-4 items-center text-[22px] text-primary">
                           <GraduationCap size={28} />
                           <h4 className="capitalize font-medium">
@@ -255,7 +264,58 @@ export const About = () => {
                     </div>
                   </div>
                 </TabsContent>
-                <TabsContent value="skills">Skills</TabsContent>
+                <TabsContent value="skills">
+                  <div className="text-center xl:text-left">
+                    <h3 className="h3 mb-8">Herrmaientas de uso diario </h3>
+                    {/* Skills */}
+                    <div className="mb-16">
+                      <h4 className="text-xl font-semibold mb-2">Skills</h4>
+                      <div className="border-b border-border mb-4"></div>
+                      {/**Skill List */}
+                      <div>
+                        {getData(skillData, "Skills").data.map(
+                          (item: SkillDataItem, index: number) => {
+                            const { name } = item;
+                            return (
+                              <div
+                                key={index}
+                                className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
+                              >
+                                <div className="font-medium">{name}</div>
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
+                    {/* Tools */}
+                    <div>
+                      <h4 className="text-xl font-semibold mb-2 xl:text-left">
+                        Tools
+                      </h4>
+                      <div className="border-b border-border mb-4"></div>
+                      {/*Tool List */}
+                      <div className="flex gap-x-8 justify-center xl:justify-start">
+                        {getData(skillData, "Tools").data.map(
+                          (item: SkillDataItem, index: number) => {
+                            const { name } = item;
+                            return (
+                              <div key={index}>
+                                <Image
+                                  src={name}
+                                  alt="Logo"
+                                  width={48}
+                                  height={48}
+                                  priority
+                                />
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </TabsContent>
               </div>
             </Tabs>
           </div>

@@ -10,3 +10,4 @@ export * from "./Nav";
 export * from "./Social";
 export * from "./Template";
 export * from "./ThemeToggler";
+export * from "./Services";

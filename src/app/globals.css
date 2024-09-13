@@ -67,7 +67,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground m-4;
+    @apply bg-background text-foreground
   }
 }
 
