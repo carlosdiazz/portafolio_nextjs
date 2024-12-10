@@ -1,5 +1,5 @@
 "use client";
-import { AppRouter } from "@/router";
+
 import Link from "next/link";
 import {
   //RiYoutubeFill,
@@ -11,10 +11,10 @@ import {
 
 const icons = [
   //{ path: AppRouter.home, name: <RiYoutubeFill /> },
-  { path: AppRouter.home, name: <RiLinkedinFill /> },
-  { path: AppRouter.home, name: <RiGithubFill /> },
-  { path: AppRouter.home, name: <RiInstagramFill /> },
-  { path: AppRouter.home, name: <RiWhatsappFill /> },
+  { path: "https://www.linkedin.com/in/carlosdiaz08/", name: <RiLinkedinFill /> },
+  { path: "https://github.com/carlosdiazz", name: <RiGithubFill /> },
+  { path: "https://www.instagram.com/carlosdiazz08", name: <RiInstagramFill /> },
+  { path: "https://wa.me/+18293569000", name: <RiWhatsappFill /> },
 ];
 
 interface Props {

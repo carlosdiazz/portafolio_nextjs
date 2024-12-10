@@ -18,8 +18,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Portafolio Carlos Diaz",
-  description: "Portafolio Carlos Diaz",
+  title: "Carlos Diaz",
+  description: "Carlos Diaz",
 };
 
 export default function RootLayout({
@@ -32,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system">
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />
           <Template>{children}</Template>
           <Footer />

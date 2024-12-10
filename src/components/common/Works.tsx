@@ -21,76 +21,49 @@ export interface ProjectDataInterface {
 
 export const projectData: ProjectDataInterface[] = [
   {
-    image: "/work/1.png",
-    category: "react js",
-    name: "Pagina Web",
+    image: "/work/premios_rd.png",
+    category: "flutter",
+    name: "Premios RD",
     description:
-      "Ullamco voluptate aute ad consectetur aute elit deserunt laboris. Exercitation exercitation laboris ad laboris aute officia ad ea voluptate nisi dolore ipsum fugiat mollit. ",
-    link: "/",
-    github: "/",
+      "Una aplicación móvil disponible en Google Play y Apple Store, con mas de 4,000 descargas, diseñada para consultar los resultados de las loterías en República Dominicana. Ofrece actualizaciones en tiempo real, una interfaz fácil de usar, y notificaciones personalizadas.",
+    link: "https://www.premiosrd.com",
+    github: "https://www.premiosrd.com",
   },
   {
-    image: "/work/2.png",
-    category: "next js",
-    name: "Proyecto Web",
+    image: "/work/panama.png",
+    category: "flutter",
+    name: "Premios PTY",
     description:
-      "Ullamco voluptate aute ad consectetur aute elit deserunt laboris. Exercitation exercitation laboris ad laboris aute officia ad ea voluptate nisi dolore ipsum fugiat mollit. ",
-    link: "/",
-    github: "/",
+      "Aplicación móvil disponible en Google Play y Apple Store, con mas de 500 descargas, enfocada en el mercado de loterías en Panamá. Permite a los usuarios verificar resultados de sorteos locales al instante y ofrece herramientas para seguir sus números favoritos de manera sencilla.",
+    link: "https://www.premiospty.com",
+    github: "https://www.premiospty.com",
   },
   {
-    image: "/work/3.png",
-    category: "react js",
-    name: "Applicacion Web",
+    image: "/work/lotto_ayiti.png",
+    category: "flutter",
+    name: "Lotto Ayiti",
     description:
-      "Ullamco voluptate aute ad consectetur aute elit deserunt laboris. Exercitation exercitation laboris ad laboris aute officia ad ea voluptate nisi dolore ipsum fugiat mollit.",
-    link: "/",
-    github: "/",
+      "Aplicación móvil disponible en Google Play y Apple Store, con mas de 1,000 descargas, Ofrece resultados actualizados en tiempo real de los sorteos nacionales de Haiti, con un diseño intuitivo que permite a los usuarios consultar fácilmente sus números ganadores.",
+    link: "https://ayiti.diazcode.com",
+    github: "https://ayiti.diazcode.com",
   },
   {
-    image: "/work/4.png",
-    category: "react js",
-    name: "Carlos Web",
+    image: "/work/haiti_bolet.png",
+    category: "NestJs",
+    name: "Haiti Bolet",
     description:
-      "Ullamco voluptate aute ad consectetur aute elit deserunt laboris. Exercitation exercitation laboris ad laboris aute officia ad ea voluptate nisi dolore ipsum fugiat mollit. ",
-    link: "/",
-    github: "/",
+      "Un proyecto que consistió en la creación de la página web oficial para la lotería de Haití. La plataforma ofrece una experiencia moderna y accesible para los usuarios, mostrando resultados de sorteos en tiempo real, información sobre premios y otras funciones clave.",
+    link: "https://haitibolet.net/",
+    github: "https://haitibolet.net/",
   },
   {
-    image: "/work/1.png",
+    image: "/work/lottery_screen.png",
     category: "fullstack",
-    name: "Jose Web",
+    name: "Lottery Screen",
     description:
-      "Ullamco voluptate aute ad consectetur aute elit deserunt laboris. Exercitation exercitation laboris ad laboris aute officia ad ea voluptate nisi dolore ipsum fugiat mollit. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
-    category: "fullstack",
-    name: "Marcos Web",
-    description:
-      "Ullamco voluptate aute ad consectetur aute elit deserunt laboris. Exercitation exercitation laboris ad laboris aute officia ad ea voluptate nisi dolore ipsum fugiat mollit. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "react js",
-    name: "Maria Web",
-    description:
-      "Ullamco voluptate aute ad consectetur aute elit deserunt laboris. Exercitation exercitation laboris ad laboris aute officia ad ea voluptate nisi dolore ipsum fugiat mollit. ",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/3.png",
-    category: "next js",
-    name: "Juan Web",
-    description:
-      "Ullamco voluptate aute ad consectetur aute elit deserunt laboris. Exercitation exercitation laboris ad laboris aute officia ad ea voluptate nisi dolore ipsum fugiat mollit. ",
-    link: "/",
-    github: "/",
+      "Una innovadora aplicación diseñada específicamente para Android TV, que transforma cualquier pantalla en un dinámico centro de información sobre loterías. La aplicación permite mostrar imágenes, videos y resultados de sorteos en tiempo real, ofreciendo una experiencia visual atractiva y profesional. Ideal para locales comerciales o entornos donde se requiera una presentación clara y moderna de la información de loterías.",
+    link: "https://dev.diazcode.com/",
+    github: "https://dev.diazcode.com/",
   },
 ];
 
@@ -101,11 +74,7 @@ export const Works = () => {
         {/* Text */}
         <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4">Ultimos Proyectos</h2>
-          <p className="subtitle mb-8">
-            Ut dolore sint elit mollit cupidatat cillum officia laborum. Dolor
-            elit ad Lorem esse incididunt sit consequat. Mollit anim Lorem
-            ullamco magna.
-          </p>
+
           <Link href={AppRouter.projects}>
             <Button>Todos los Proyectos</Button>
           </Link>

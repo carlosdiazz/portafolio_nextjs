@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react'
 
 interface Props {
@@ -6,10 +5,11 @@ interface Props {
   imgSrc: string;
 }
 
-export const DevImg = ({imgSrc, containerStyles}:Props) => {
+export const DevImg = ({containerStyles}:Props) => {
   return (
     <div className={`${containerStyles}`}>
-      <Image src={imgSrc} fill priority alt='Avatar'/>
+      
     </div>
   )
 }
+//<Image src={imgSrc} fill priority alt='Avatar'/>

@@ -8,7 +8,7 @@ export const Cta = () => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <h2 className="h2 max-w-xl text-center mb-8">
-            Ex culpa sint adipisicing ex esse amet. Ipsum do do aute sunt enim.{" "}
+          Transformando ideas en soluciones digitales innovadoras, con pasión por la tecnología y compromiso con la excelencia.{" "}
           </h2>
           <Link href={AppRouter.contact}>
             <Button>Contacto</Button>

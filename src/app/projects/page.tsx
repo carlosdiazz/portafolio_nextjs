@@ -4,12 +4,15 @@ import { ProjectCard, projectData, Tabs, TabsContent, TabsList, TabsTrigger } fr
 import { useState } from "react";
 
 export default function ProjectPage() {
-  const uniqueCategories: string[] = [
-    "all",
-    ...new Set(projectData.map((item) => item.category)),
-  ];
+  const uniqueCategories: string[] = ["all"];
+  // Añadimos las categorías manualmente sin usar Set
+  projectData.forEach(item => {
+    if (!uniqueCategories.includes(item.category)) {
+      uniqueCategories.push(item.category);
+    }
+  });
 
-  const [categories, setCategories] = useState(uniqueCategories);
+  const [categories,] = useState(uniqueCategories);
   const [category, setCategory] = useState("all");
 
   const filteredProjects = projectData.filter(project => {
@@ -17,13 +20,11 @@ export default function ProjectPage() {
     return category === "all" ? project : project.category === category
   });
 
-  console.log(filteredProjects);
-
   return (
     <section className="min-h-screen pt-12">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
-          My Proejcts
+          Proyectos
         </h2>
         {/* Tabs */}
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">

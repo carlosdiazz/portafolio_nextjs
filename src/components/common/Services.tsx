@@ -11,21 +11,21 @@ interface ServiceData {
 const servicesData: ServiceData[] = [
   {
     icon: <GanttChartSquare size={72} strokeOpacity={0.8} />,
-    title: "Web Design",
+    title: "Desarrollo de APIs Backend",
     description:
-      "Aliqua esse ex consectetur nisi. Culpa aliqua ad magna id ea laborum non non ad ea commodo. Irure tempor cupidatat ad ex quis sit ea. Commodo anim incididunt fugiat nisi amet amet sint Lorem. Exercitation consectetur ad sunt non cupidatat.",
+      "Diseño y creación de APIs robustas y escalables utilizando NestJS, garantizando alto rendimiento y seguridad para tus aplicaciones.",
   },
   {
     icon: <Blocks size={72} strokeOpacity={0.8} />,
-    title: "Web Development",
+    title: "Aplicaciones Web",
     description:
-      "Aliqua esse ex consectetur nisi. Culpa aliqua ad magna id ea laborum non non ad ea commodo. Irure tempor cupidatat ad ex quis sit ea. Commodo anim incididunt fugiat nisi amet amet sint Lorem. Exercitation consectetur ad sunt non cupidatat.",
+      "Creación de aplicaciones web dinámicas y responsivas con Next.js, asegurando una experiencia de usuario fluida y tecnologías de vanguardia.",
   },
   {
     icon: <Gem size={72} strokeOpacity={0.8} />,
-    title: "App Development",
+    title: "Aplicaciones Móviles",
     description:
-      "Aliqua esse ex consectetur nisi. Culpa aliqua ad magna id ea laborum non non ad ea commodo. Irure tempor cupidatat ad ex quis sit ea. Commodo anim incididunt fugiat nisi amet amet sint Lorem. Exercitation consectetur ad sunt non cupidatat.",
+      "Desarrollo de aplicaciones móviles personalizadas con Flutter, optimizadas para Android e iOS, con interfaces modernas y funcionales.",
   },
 ];
 

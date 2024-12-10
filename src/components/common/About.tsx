@@ -9,8 +9,7 @@ import {
   //Calendar,
   Briefcase,
 } from "lucide-react";
-import Image from "next/image";
-import { DevImg } from "./DevImg";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui";
 
 interface InfoDataInterface {
@@ -20,12 +19,8 @@ interface InfoDataInterface {
 
 const infoData: InfoDataInterface[] = [
   { icon: <User2 size={28} />, text: "Carlos Diaz" },
-  { icon: <PhoneCall size={28} />, text: "+1 829 802 5258" },
+  { icon: <PhoneCall size={28} />, text: "+1 829-356-9000" },
   { icon: <MailIcon size={28} />, text: "c.diazadriann@gmail.com" },
-  //{
-  //  icon: <GraduationCap size={28} />,
-  //  text: "Ingenerio de Ciencias de la Computacion",
-  //},
   { icon: <HomeIcon size={28} />, text: "La Vega, Rep. Dom." },
 ];
 
@@ -100,15 +95,6 @@ const skillData: SkillData[] = [
       { name: "Typescript" },
     ],
   },
-  {
-    title: "Tools",
-    data: [
-      { name: "/about/vscode.svg" },
-      { name: "/about/figma.svg" },
-      { name: "/about/notion.svg" },
-      { name: "/about/wordpress.svg" },
-    ],
-  },
 ];
 
 export const About = () => {
@@ -124,17 +110,10 @@ export const About = () => {
           Acerca De
         </h2>
         <div className="flex flex-col xl:flex-row">
-          {/* Image */}
-          <div className="hidden xl:flex flex-1 relative">
-            <DevImg
-              containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
-              imgSrc="/about/developer.png"
-            />
-          </div>
           {/* Tabs */}
           <div className="flex-1">
             <Tabs defaultValue="personal">
-              <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
+              <TabsList className="w-full grid xl:grid-cols-3  xl:border dark:border-none">
                 <TabsTrigger className="w-[182px] xl:w-auto" value="personal">
                   Informacion Personal
                 </TabsTrigger>
@@ -172,12 +151,6 @@ export const About = () => {
                           </div>
                         );
                       })}
-                    </div>
-                    {/* Languages */}
-                    <div className="flex flex-col gap-y-2">
-                      <div className="text-primary">Language Skill</div>
-                      <div className="border-b border-border"></div>
-                      <div>English, Spanish</div>
                     </div>
                   </div>
                 </TabsContent>
@@ -283,32 +256,6 @@ export const About = () => {
                                 className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
                               >
                                 <div className="font-medium">{name}</div>
-                              </div>
-                            );
-                          }
-                        )}
-                      </div>
-                    </div>
-                    {/* Tools */}
-                    <div>
-                      <h4 className="text-xl font-semibold mb-2 xl:text-left">
-                        Tools
-                      </h4>
-                      <div className="border-b border-border mb-4"></div>
-                      {/*Tool List */}
-                      <div className="flex gap-x-8 justify-center xl:justify-start">
-                        {getData(skillData, "Tools").data.map(
-                          (item: SkillDataItem, index: number) => {
-                            const { name } = item;
-                            return (
-                              <div key={index}>
-                                <Image
-                                  src={name}
-                                  alt="Logo"
-                                  width={48}
-                                  height={48}
-                                  priority
-                                />
                               </div>
                             );
                           }

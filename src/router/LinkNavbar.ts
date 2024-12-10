@@ -7,6 +7,6 @@ interface LinkInterface {
 
 export const linksNavbar: LinkInterface[] = [
   { name: "Home", path: AppRouter.home },
-  { name: "My projects", path: AppRouter.projects },
-  { name: "Contact", path: AppRouter.contact },
+  { name: "Proyectos", path: AppRouter.projects },
+  { name: "Contacto", path: AppRouter.contact },
 ];

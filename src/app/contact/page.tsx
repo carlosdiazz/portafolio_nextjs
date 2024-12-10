@@ -1,5 +1,5 @@
 
-import { FormCustom } from "@/components";
+
 import { HomeIcon, MailIcon, PhoneCall } from "lucide-react";
 
 export default function ContactPage() {
@@ -12,13 +12,11 @@ export default function ContactPage() {
           <div className="flex flex-col justify-center">
             <div className="flex items-center gap-x-4 text-primary text-lg mb-4">
               <span className="w-[30px] h-[2px] bg-primary"></span>
-              Hello
+              Carlos Diaz
             </div>
-            <h1 className="h1 max-w-md mb-8">Let Work dasboas</h1>
+            <h1 className="h1 max-w-md mb-8">Contáctame</h1>
             <p className="subtitle max-w-[400px]">
-              Minim minim pariatur officia dolore et adipisicing excepteur
-              cillum incididunt id. Cupidatat aliqua adipisicing sunt laborum ex
-              nulla ex amet id eiusmod ipsum.{" "}
+            ¿Tienes un proyecto en mente o necesitas más información? No dudes en contactarme.{" "}
             </p>
           </div>
           {/* Ilustracion */}
@@ -44,10 +42,10 @@ export default function ContactPage() {
             {/*Email */}
             <div className="flex items-center gap-x-8">
               <PhoneCall size={18} className="text-primary" />
-              <div>+1 809-573-0000</div>
+              <div>+1 829-356-9000</div>
             </div>
           </div>
-          <FormCustom/>
+
         </div>
       </div>
     </section>
