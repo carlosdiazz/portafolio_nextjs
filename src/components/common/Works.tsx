@@ -52,9 +52,18 @@ export const projectData: ProjectDataInterface[] = [
     category: "NestJs",
     name: "Haiti Bolet",
     description:
-      "Un proyecto que consistió en la creación de la página web oficial para la lotería de Haití. La plataforma ofrece una experiencia moderna y accesible para los usuarios, mostrando resultados de sorteos en tiempo real, información sobre premios y otras funciones clave.",
+      "Implementé un API robusto y eficiente para gestionar y actualizar la premiación de la plataforma. Este API se encarga de recibir los resultados de los sorteos, actualizando la información en tiempo real para que los usuarios puedan consultar los datos sin demora. La integración de este servicio con la página web se realizó de manera fluida, lo que garantiza que los usuarios siempre tengan acceso a los resultados más recientes.",
     link: "https://haitibolet.net/",
     github: "https://haitibolet.net/",
+  },
+  {
+    image: "/work/dizlote.png",
+    category: "NestJs",
+    name: "DizLotte",
+    description:
+      "DizzLote es una plataforma integral diseñada para la creación, gestión y automatización de loterías, juegos y sorteos. Esta plataforma no solo permite a los administradores crear y configurar sorteos de manera sencilla, sino que también incluye una potente funcionalidad de web scraping para obtener resultados en tiempo real de diversas fuentes externas. Este sistema de scraping asegura que la plataforma siempre esté actualizada con los resultados más recientes, lo que permite a los usuarios acceder a la información de forma rápida y precisa.",
+    link: "https://dev.diazcode.com/",
+    github: "https://dev.diazcode.com/",
   },
   {
     image: "/work/lottery_screen.png",

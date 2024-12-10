@@ -18,14 +18,7 @@ export const Hero = () => {
             </div>
             <h1 className="h1 mb-4">Hola, mi nombre es Carlos Diaz</h1>
             <p className="subtitle m-w-[490px] mx-auto xl:mx-0">
-              Soy Ingeniero en Sistemas con más de 4 años de experiencia en el
-              desarrollo de soluciones tecnológicas eficientes y escalables. Me
-              especializo en la arquitectura de microservicios, contenedores con
-              Docker, y el desarrollo de aplicaciones frontend y backend
-              utilizando tecnologías como NestJS, Flutter y Next.js. Mi objetivo
-              es crear sistemas robustos y personalizados que se adapten a las
-              necesidades específicas de los clientes, garantizando alto
-              rendimiento y escalabilidad.
+            Soy Carlos Diaz, un apasionado Full Stack Developer con más de cinco años de experiencia en la industria. Mi enfoque se centra en el desarrollo ágil y eficiente de aplicaciones, utilizando tecnologías de vanguardia para transformar ideas en código funcional.
             </p>
             {/* Button */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">

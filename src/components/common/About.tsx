@@ -129,15 +129,18 @@ export const About = () => {
                 {/*Personal  */}
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left ">
-                    <h3 className="h3 mb-4">
-                      Inginiero en sistemas con mas de 4 anos de experiencia
-                    </h3>
+                    <h3 className="h3 mb-4">FullStack Developer</h3>
                     <p className="subtitle max-w-xl max-auto xl:mx-0">
-                      Estamos a la varguandia en la tencologia, loq ue nos
-                      permite ofrecerle a nuestro cleintes los mejores proectos
-                      del emrcado, utilziando siempre las ultimas tecnologias
-                      que es lo que nos caracteriza
+                      Como Full Stack Developer, he tenido la oportunidad de
+                      desarrollar y desplegar múltiples servicios API, tanto
+                      RESTful como GraphQL, además de microservicios. En mis
+                      proyectos, he gestionado desde la creación de la
+                      infraestructura de backend hasta el despliegue en la nube,
+                      lo que permite que estos servicios sean consumidos de
+                      manera eficiente por aplicaciones móviles y web
+                      desarrolladas con tecnologías como Next.js y Flutter.
                     </p>
+
                     {/* Icons */}
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">
                       {infoData.map((item, index) => {
