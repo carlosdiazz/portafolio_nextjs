@@ -86,13 +86,14 @@ const skillData: SkillData[] = [
   {
     title: "Skills",
     data: [
-      { name: "Front-end Development" },
-      { name: "Back-end Development" },
-      { name: "NestJs" },
-      { name: "NextJs" },
-      { name: "Flutter" },
-      { name: "Docker" },
-      { name: "Typescript" },
+      { name: "Bases de Datos: PostgreSQL, MongoDB, Redis, Firebase" },
+      { name: "Lenguajes/Herramientas: JavaScript, TypeScript, Dart, Python" },
+      { name: "Control de Versiones: Git" },
+      { name: "Containerización/Orquestación: Docker, Kubernetes." },
+      { name: "API: REST, GraphQL" },
+      { name: "Arquitectura: Microservicios" },
+      { name: "Sistemas de Mensajería: RabbitMQ, MQTT" },
+      { name: "Buenas Prácticas: Código Limpio (Clean Code)" },
     ],
   },
 ];
@@ -243,11 +244,10 @@ export const About = () => {
                 </TabsContent>
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-8">Herrmaientas de uso diario </h3>
+                    <h3 className="h3 mb-8">Skills </h3>
                     {/* Skills */}
                     <div className="mb-16">
-                      <h4 className="text-xl font-semibold mb-2">Skills</h4>
-                      <div className="border-b border-border mb-4"></div>
+
                       {/**Skill List */}
                       <div>
                         {getData(skillData, "Skills").data.map(
