@@ -23,27 +23,27 @@ export const projectData: ProjectDataInterface[] = [
   {
     image: "/work/premios_rd.png",
     category: "flutter",
-    name: "Premios RD",
+    name: "Premios RD Loterias Dominicanas",
     description:
-      "Una aplicación móvil disponible en Google Play y Apple Store, con mas de 4,000 descargas, diseñada para consultar los resultados de las loterías en República Dominicana. Ofrece actualizaciones en tiempo real, una interfaz fácil de usar, y notificaciones personalizadas.",
+      "Una aplicación móvil disponible en Google Play y Apple Store, con mas de 5,000 descargas, diseñada para consultar los resultados de las loterías en República Dominicana. Ofrece actualizaciones en tiempo real, una interfaz fácil de usar, y notificaciones personalizadas.",
     link: "https://www.premiosrd.com",
     github: "https://www.premiosrd.com",
   },
   {
     image: "/work/panama.png",
     category: "flutter",
-    name: "Premios PTY",
+    name: "Lotto latina Resultados Latinos",
     description:
-      "Aplicación móvil disponible en Google Play y Apple Store, con mas de 500 descargas, enfocada en el mercado de loterías en Panamá. Permite a los usuarios verificar resultados de sorteos locales al instante y ofrece herramientas para seguir sus números favoritos de manera sencilla.",
+      "Aplicación móvil disponible en Google Play y Apple Store, con mas de 1000 descargas, Lotto Latina: Resultados de Todas las Loterías de América Latina en un solo Lugar, contamos con más de 100 loterías oficiales de toda América Latina, Centroamérica, el Caribe, y también de Estados Unidos.",
     link: "https://www.premiospty.com",
     github: "https://www.premiospty.com",
   },
   {
     image: "/work/lotto_ayiti.png",
     category: "flutter",
-    name: "Lotto Ayiti",
+    name: "Lotto Ayiti Loterias Haiti",
     description:
-      "Aplicación móvil disponible en Google Play y Apple Store, con mas de 1,000 descargas, Ofrece resultados actualizados en tiempo real de los sorteos nacionales de Haiti, con un diseño intuitivo que permite a los usuarios consultar fácilmente sus números ganadores.",
+      "Aplicación móvil disponible en Google Play y Apple Store, con mas de 5,000 descargas, Ofrece resultados actualizados en tiempo real de los sorteos nacionales de Haiti, con un diseño intuitivo que permite a los usuarios consultar fácilmente sus números ganadores.",
     link: "https://ayiti.diazcode.com",
     github: "https://ayiti.diazcode.com",
   },

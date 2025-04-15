@@ -19,7 +19,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Carlos Diaz",
-  description: "Carlos Diaz",
+  description: "Carlos Jose Diaz - DIAZCODE es una empresa especializada en el desarrollo de programas y software utilizando las últimas tecnologías disponibles.",
 };
 
 export default function RootLayout({
